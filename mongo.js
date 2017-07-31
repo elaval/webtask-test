@@ -24,8 +24,8 @@ module.exports = function(ctx, cb) {
       },
       function do_something(db, done) {
           db
-              .collection('my-collection')
-              .insertOne({ msg: 'Hey Mongo!' }, function (err, result) {
+              .collection('summary_2009_2017.')
+              .find({}, function (err, result) {
                   if(err) return done(err);
 
                   done(null, result);
