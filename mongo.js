@@ -24,7 +24,7 @@ module.exports = function(ctx, cb) {
       },
       function do_something(db, done) {
           db
-              .collection('summary_2009_2017.')
+              .collection('summary_2009_2017')
               .find({}, function (err, result) {
                   if(err) return done(err);
 
